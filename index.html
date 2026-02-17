@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ing. Agrimensor G.H. Spadavecchia | Mensuras y Topografía</title>
+    <style>
+        /* --- Personalización CSS --- */
+        :root {
+            --primary-color: #003366; /* Azul institucional */
+            --secondary-color: #f4f4f4;
+            --accent-color: #e67e22; /* Naranja para llamados a la acción */
+            --text-dark: #333;
+            --text-light: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #fff;
+        }
+
+        /* Navegación */
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,51,102,0.8), rgba(0,51,102,0.8)), 
+                        url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1600') center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+
+        /* Servicios */
+        .services {
+            padding: 4rem 10%;
+            background-color: var(--secondary-color);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+            border-bottom: 4px solid var(--primary-color);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Contacto */
+        .contact {
+            padding: 4rem 10%;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .btn-budget {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        span.matricula {
+            display: block;
+            font-style: italic;
+            margin-top: 5px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Ing. Agrimensor G.H. Spadavecchia</div>
+    </header>
+
+    <section class="hero">
+        <h1>Soluciones Profesionales en Agrimensura</h1>
+        <p>Precisión técnica y asesoramiento integral en todo el territorio nacional.</p>
+        <span class="matricula">Matrícula Nacional: 3676</span>
+        <a href="#contacto" class="btn-budget">Solicitar Presupuesto</a>
+    </section>
+
+    <section class="services">
+        <h2 style="text-align: center;">Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Certificación de Estado Parcelario</h3>
+                <p>Verificación técnica de límites y mejoras para actos de transmisión de dominio.</p>
+            </div>
+            <div class="service-card">
+                <h3>Mensuras</h3>
+                <p>Determinación, demarcación y verificación de límites territoriales conforme a normativa vigente.</p>
+            </div>
+            <div class="service-card">
+                <h3>Topografía</h3>
+                <p>Relevamientos altimétricos y planimétricos de alta precisión para proyectos civiles y rurales.</p>
+            </div>
+            <div class="service-card">
+                <h3>Asesoramiento Profesional</h3>
+                <p>Consultoría técnica y legal sobre parcelamiento, loteos y subdivisiones.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contacto Profesional</h2>
+        <p>¿Necesita un presupuesto para su propiedad o proyecto? Contácteme directamente:</p>
+        
+        <div class="contact-info">
+            <div>
+                <strong>📧 Email:</strong><br>
+                <a href="mailto:ghspadavecchia@gmail.com">ghspadavecchia@gmail.com</a>
+            </div>
+            <div>
+                <strong>📞 Teléfono / WhatsApp:</strong><br>
+                <a href="tel:+541131499294">11 3149 9294</a>
+            </div>
+        </div>
+
+        <p style="margin-top: 40px;"><em>Atención personalizada y presupuestos sin compromiso.</em></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ing. Agrimensor G.H. Spadavecchia - Matrícula Nacional 3676<br>
+        Argentina</p>
+    </footer>
+
+</body>
+</html>
