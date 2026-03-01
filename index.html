@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ing. Agrimensor G.H. Spadavecchia | Mensuras y Topografía</title>
+    <title>Ing. Agrim. Guido Spadavecchia | Mensuras y Topografía</title>
     <style>
         /* --- Personalización CSS --- */
         :root {
-            --primary-color: #003366; /* Azul institucional */
+            --primary-color: #003366; 
             --secondary-color: #f4f4f4;
-            --accent-color: #e67e22; /* Naranja para llamados a la acción */
+            --accent-color: #e67e22; 
             --text-dark: #333;
             --text-light: #ffffff;
         }
@@ -23,7 +23,6 @@
             background-color: #fff;
         }
 
-        /* Navegación */
         header {
             background-color: var(--primary-color);
             color: var(--text-light);
@@ -42,24 +41,35 @@
             font-weight: bold;
         }
 
-        /* Hero Section */
+        /* Hero Section Actualizada */
         .hero {
-            background: linear-gradient(rgba(0,51,102,0.8), rgba(0,51,102,0.8)), 
+            background: linear-gradient(rgba(0,51,102,0.85), rgba(0,51,102,0.85)), 
                         url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1600') center/cover;
-            height: 60vh;
+            min-height: 70vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             color: white;
-            padding: 0 20px;
+            padding: 40px 20px;
         }
 
-        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+        /* Contenedor de Foto Personal */
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid var(--accent-color);
+            margin-bottom: 20px;
+            object-fit: cover;
+            background-color: #ddd; /* Color de respaldo si no hay imagen */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
 
-        /* Servicios */
+        .hero h1 { font-size: 2.5rem; margin: 10px 0; }
+        .hero p { font-size: 1.2rem; margin-bottom: 20px; max-width: 600px; }
+
         .services {
             padding: 4rem 10%;
             background-color: var(--secondary-color);
@@ -81,11 +91,8 @@
             border-bottom: 4px solid var(--primary-color);
         }
 
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
+        .service-card:hover { transform: translateY(-10px); }
 
-        /* Contacto */
         .contact {
             padding: 4rem 10%;
             text-align: center;
@@ -108,7 +115,10 @@
             font-weight: bold;
             display: inline-block;
             margin-top: 20px;
+            transition: background 0.3s;
         }
+
+        .btn-budget:hover { background-color: #d35400; }
 
         footer {
             background: #222;
@@ -130,18 +140,20 @@
 <body>
 
     <header>
-        <div class="logo">Ing. Agrimensor G.H. Spadavecchia</div>
+        <div class="logo">Ing. Agrim. Guido Spadavecchia</div>
     </header>
 
     <section class="hero">
+        <img src="tu-foto.jpg" alt="Ing. Guido Spadavecchia" class="profile-photo">
+        
         <h1>Soluciones Profesionales en Agrimensura</h1>
-        <p>Precisión técnica y asesoramiento integral en todo el territorio nacional.</p>
+        <p>Precisión técnica y asesoramiento integral en Buenos Aires</p>
         <span class="matricula">Matrícula Nacional: 3676</span>
         <a href="#contacto" class="btn-budget">Solicitar Presupuesto</a>
     </section>
 
     <section class="services">
-        <h2 style="text-align: center;">Nuestros Servicios</h2>
+        <h2 style="text-align: center;">Servicios Profesionales</h2>
         <div class="services-grid">
             <div class="service-card">
                 <h3>Certificación de Estado Parcelario</h3>
@@ -163,7 +175,7 @@
     </section>
 
     <section id="contacto" class="contact">
-        <h2>Contacto Profesional</h2>
+        <h2>Contacto</h2>
         <p>¿Necesita un presupuesto para su propiedad o proyecto? Contácteme directamente:</p>
         
         <div class="contact-info">
@@ -176,13 +188,11 @@
                 <a href="tel:+541131499294">11 3149 9294</a>
             </div>
         </div>
-
-        <p style="margin-top: 40px;"><em>Atención personalizada y presupuestos sin compromiso.</em></p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Ing. Agrimensor G.H. Spadavecchia - Matrícula Nacional 3676<br>
-        Argentina</p>
+        <p>&copy; 2026 Ing. Agrim. Guido Spadavecchia - Matrícula Nacional 3676<br>
+        Buenos Aires, Argentina</p>
     </footer>
 
 </body>
