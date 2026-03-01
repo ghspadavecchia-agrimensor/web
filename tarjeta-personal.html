@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta Digital | Ing. Agrim. Guido Spadavecchia</title>
+    <style>
+        :root {
+            --primary: #003366;
+            --accent: #e67e22;
+            --bg: #f0f2f5;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            border-top: 8px solid var(--primary);
+        }
+        .header {
+            padding: 30px 20px;
+            background: white;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            margin-bottom: 15px;
+        }
+        h1 { font-size: 1.4rem; color: var(--primary); margin: 5px 0; }
+        p { color: #666; font-size: 0.9rem; margin: 5px 0; }
+        .links {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .btn {
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+            color: white;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+        .btn-ws { background-color: #25D366; }
+        .btn-mail { background-color: var(--primary); }
+        .btn-web { background-color: #555; }
+        .btn:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header">
+            <img src="tu-foto.jpg" alt="Guido Spadavecchia" class="profile-img">
+            <h1>Guido Spadavecchia</h1>
+            <p><strong>Ingeniero Agrimensor</strong></p>
+            <p>Matrícula Nacional: 3676</p>
+        </div>
+        
+        <div class="links">
+            <a href="https://wa.me/541131499294?text=Hola%20Guido,%20vi%20tu%20tarjeta%20digital" class="btn btn-ws">WhatsApp</a>
+            <a href="mailto:ghspadavecchia@gmail.com" class="btn btn-mail">Enviar Email</a>
+            <a href="/" class="btn btn-web">Visitar Sitio Web</a>
+        </div>
+    </div>
+
+</body>
+</html>
