@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado Parcelario CABA y Provincia | Ing. Agrim. Guido Spadavecchia</title>
+    <style>
+        :root {
+            --primary: #003366; /* Azul Marino Principal */
+            --accent: #e67e22;  /* Naranja de Contraste */
+            --bg: #f8f9fa;
+            --text: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header .logo {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            border: 1px solid white;
+            padding: 5px 12px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        header a:hover {
+            background-color: white;
+            color: var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .info-section h1 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+
+        .info-section h2 {
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+
+        .highlight-box {
+            background-color: #eef4f8;
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* --- Estilos del Formulario --- */
+        .form-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-top: 5px solid var(--accent);
+        }
+
+        .form-card h3 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.4rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        .btn-submit {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #d35400;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Ing. Agrim. Guido Spadavecchia</div>
+        <a href="https://www.ingspadavecchia.com.ar" target="_blank">🌐 Ir a Sitio Web Principal</a>
+    </header>
+
+    <div class="container">
+        
+        <!-- Sección Explicativa -->
+        <div class="info-section">
+            <h1>¿Necesitás hacer el Estado Parcelario de tu propiedad?</h1>
+            
+            <p>Si estás por vender, donar o constituir una hipoteca sobre un inmueble, el escribano o la inmobiliaria te solicitarán la <strong>Constitución del Estado Parcelario</strong>.</p>
+
+            <h2>¿Qué es y para qué sirve?</h2>
+            <p>El Estado Parcelario es una verificación técnica que realiza un Ingeniero Agrimensor para confirmar que las medidas, límites y superficie reales de la propiedad coinciden con lo que figura en el título de propiedad y en el Catastro oficial.</p>
+
+            <div class="highlight-box">
+                <strong>💡 En palabras simples:</strong> Garantiza que no haya construcciones no declaradas o invasiones sobre terrenos vecinos, protegiendo tanto al comprador como al vendedor.
+            </div>
+
+            <h2>¿Cómo es el proceso?</h2>
+            <ol>
+                <li>Coordinamos una visita a la propiedad para tomar las mediciones.</li>
+                <li>Procesamos los datos y confeccionamos la documentación técnica.</li>
+                <li>Presentamos el trámite ante el organismo oficial correspondiente (CABA o Provincia).</li>
+            </ol>
+        </div>
+
+        <!-- Formulario de Presupuesto -->
+        <div class="form-card">
+            <h3>Solicitá tu Presupuesto</h3>
+            <p style="font-size: 0.85rem; color: #666; text-align: center;">Completá los datos y te responderé a la brevedad con la cotización del trámite.</p>
+            
+            <!-- Formulario con tu código de Formspree configurado -->
+            <form action="https://formspree.io/f/mpqvozew" method="POST">
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre y Apellido *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contacto">Teléfono o Email de contacto *</label>
+                    <input type="text" id="contacto" name="contacto" placeholder="Ej: 11 1234-5678 o mail@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Dirección exacta del inmueble *</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Ej: Av. Rivadavia 5000, CABA" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Aclaraciones adicionales (Opcional)</label>
+                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Ej: Es una propiedad de 200m2, necesito urgencia por escritura..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Solicitar Cotización Sin Cargo</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p><strong>Ing. Agrim. Guido Spadavecchia</strong> — Matrícula Nacional: 3676</p>
+        <p>Atención en CABA y Provincia de Buenos Aires | <a href="https://www.ingspadavecchia.com.ar" style="color: var(--primary);">www.ingspadavecchia.com.ar</a></p>
+    </footer>
+
+</body>
+</html>
